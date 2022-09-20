@@ -1,5 +1,18 @@
 body {
-    background: radial-gradient(#fff, #ffd6d6, #f6a0e7);
+    background-color: FFFBF2;
+    font-family: "Marck Script", serif;
+    text-align: center;
+    color: 6C6C6C;
+    background: rgb(255, 29, 210);
+
+    background: radial-gradient(circle, rgba(255, 29, 210, 1) 6%, rgba(255, 174, 247, 1) 14%, rgba(197, 29, 255, 1) 18%);
+    background-image: radial-gradient(center center, circle cover, #ffeda3, transparent 30%);
+    transition: 50s;
+}
+
+body:hover {
+    background: rgb(255, 29, 210);
+    background: radial-gradient(circle, rgba(255, 29, 210, 1) 6%, rgba(255, 174, 247, 1) 19%, rgba(197, 29, 255, 1) 33%);
 }
 
 h1 {}
@@ -25,7 +38,6 @@ h1 {}
 }
 
 .card {
-
     background-color: FFE1DC;
     width: 220px;
     height: 400px;
@@ -42,7 +54,6 @@ h1 {}
 }
 
 .card-image {
-
     display: flex;
     height: 170px;
     background-color: white;
@@ -103,19 +114,4 @@ h1 {}
     color: FFA3C9;
     text-shadow: 1px;
 
-}
-
-.box {
-    max-width: 1300px;
-    margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Marck Script", serif;
-    text-align: center;
 }
