@@ -4,29 +4,29 @@
     <!-- blank head for now -->
     <title> Basic Login Page</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="../global_assets/favicon-logo.ico">
     <script src="index.js"></script>
 </head>
 
 <body>
-
     <div class="container">
         <form action="" class="form">
-            <h1 class="form-title">Login</h1>
+            <h1 class="form-title">Sign In</h1>
 
-            <div class="form-message"></div>
+
             <div class="form-input-container">
                 <div class="form-input-group">
-                    <b>Username</b>
-                    <div class="input-error-message"></div>
+                    <p>Username</p>
                     <input type="text" class="login-text-bar" autofocus placeholder="Username">
+                    <div class="form-message input-error-message"></div>
+                </div>
 
-                </div>
                 <div class="form-input-group">
-                    <b>Password</b>
-                    <div class="input-error-message"></div>
+                    <div class="font">Password</div>
                     <input type="text" class="login-text-bar" placeholder="Password">
+                    <div class="form-message input-error-message"></div>
                 </div>
-                <button>Sign In</button>
+                <button type="submit">Sign In</button>
             </div>
             <div class="account-manage">
                 <a id="createAccount" href="./changepassword.html">Forgot your Password?</a>
