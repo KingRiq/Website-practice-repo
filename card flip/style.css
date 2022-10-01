@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-size: none;
+    font-family: 'Gowun Batang', serif;
+
+}
+
+body {
+    background: grey;
+
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+
+.card {
+
+    cursor: pointer;
+    width: 340px;
+    height: 480px;
+    position: absolute;
+
+}
+
+.card:hover>.front {
+    transform: perspective(600px) rotateY(-180deg);
+}
+
+.card:hover>.back {
+    transform: perspective(600px) rotateY(0deg);
+}
+
+
+
+.front,
+.back {
+
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: transform .6s linear;
+
+
+}
+
+.front img {
+    height: 100%;
+}
+
+.front {
+    /* background: purple; */
+    background-image: url(assets/card-img-resize.jpg);
+    background-size: cover;
+    transform: perspective(600px) rotateY(0deg);
+}
+
+.back {
+    /* background: purple; */
+    /* /* Shout out to https://www.pinterest.com/mbahkong286 */
+    /* For this dope image I straight up stole from them */
+    /* please check them out!  */
+    background-image: url(assets/back-img.jpeg);
+    background-size: cover;
+    transform: perspective(600px) rotateY(180deg);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.back-content {
+    color: rgba(101, 192, 244, 0.856);
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    margin-top: 10%;
+}
+
+.sm {
+    margin: 20 0;
+}
+
+.sm a {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    margin-top: 20%;
+    justify-content: center;
+    align-items: center;
+    color: inherit;
+    font-size: 18px;
+    transition: 0.4s;
+    border-radius: 50%;
+
+
+}
+
+.sm a:hover {
+    background: rgba(233, 231, 231, 0.154);
+    color: rgb(0, 0, 0);
+
+}

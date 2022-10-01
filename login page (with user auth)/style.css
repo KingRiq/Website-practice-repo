@@ -35,15 +35,17 @@ body {
 }
 
 .form-message {
-
-    height: 20px
+    margin-top: 10;
+    height: 50px;
+    color: transparentd
 }
 
 .form-input-container {
     /* background-color: green; */
     display: inline-block;
-    height: 45%;
+    height: 50%;
     width: 400px;
+
 
 
 }
@@ -62,6 +64,7 @@ body {
     margin-left: 25px;
     font-size: 18px;
     padding-top: 20px;
+    margin-top: 10;
 
 
 
@@ -74,5 +77,3 @@ body {
     text-align: center;
     border: none;
 }
-
-.form-input-group p {}
